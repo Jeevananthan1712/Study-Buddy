@@ -1,0 +1,155 @@
+.contacth1{
+    text-align: center;
+    margin: 10%;
+    font-family: 'Merriweather', serif;
+    font-size: 70px;
+  }
+  .contactcard1{
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: red;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  
+  }
+  .contactcard2{
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+  .contactcard1:hover{
+    background-color: #f3a0a4;
+  }
+  .contactcard2:hover{
+    background-color: #70ceeb;
+  }
+  .contactcard-title{
+    padding: 20px;
+    margin: 20px;
+  }
+  .Contactbody{
+    background-color: #111111;
+  }
+  .contactSectionreal{
+   /* background-color: #111; */
+   padding-left: 250px;
+   
+  }
+  .contactdiv{
+    text-align: center;
+    /* display:flex; */
+      /* justify-content:space-between; */
+      
+  }
+  
+  
+  /*  */
+  /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #aac157;
+  } */
+  
+  /* body {
+    width: 100%;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  
+  .contactcontainer12 {
+    width: 900px;
+    max-width: 90%;
+  }
+  
+  .contactaccordion-item {
+    color: #5118bb;
+    padding: 20px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(142, 212, 240);
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    border-radius: 9px;
+  }
+  
+  .contactaccordion-item:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    margin: 50px;
+    font-size: 2.5em;
+    color: #ffcb74;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+
+  h2,h3{
+      color: #f6f6f6;
+  }
+  
+  button {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button i {
+    margin-left: 16px;
+  }
+  
+  button i.fa-minus {
+    display: none;
+  }
+  
+  .title {
+    line-height: 28px;
+  }
+  
+  .contactdescription {
+    color: #90a3b8;
+    padding: 0;
+    letter-spacing: 0.7px;
+    line-height: 22px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.3s linear, max-height 0.3s linear,
+     padding 0.3s linear;
+  }
+  
+  /*  ---  Accordion opened --- */
+  
+  button.opened ~ .contactdescription {
+    opacity: 1;
+    max-height: 150px;
+    padding: 24px 0px;
+  }
+  
+  button.opened i.fa-plus {
+    display: none;
+  }
+  
+  button.opened i.fa-minus {
+    display: block;
+  }

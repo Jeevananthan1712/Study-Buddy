@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="Contactbody">
+    <div class="contactdiv">
+        <h1 class="contacth1">Contact Information</h1>
+        <section class="contactSectionreal">
+            <table class="contacttable">
+                <td class="contacttableiteam">
+                    <div class="contactcard1 card border-danger mb-3">
+                        <div data-aos="zoom-in-up">
+                        <div class="card-body">
+                          <h2 class="contactcard-title"><i class="bi bi-exclamation-circle"></i>To report an incident:</h2>
+                          <h4 class="serverh4 card-text"><a href="">Click here</a> or <a href="">mail us</a></h4>
+      
+                        </div>
+                        </div>
+                      </div>
+                </td>
+                <td>
+                    <div class="contactcard2 card border-primary mb-3">
+                        <div data-aos="zoom-in-up">
+                        <div class="card-body">
+                          <h2 class="contactcard-title"><i class="bi bi-chat-square-dots"></i>For other enquiries:</h2>
+                          <h4 class="serverh4 card-text"><a href="">team@heregmail.com</a></h4>
+                        </div>
+                      </div>
+                    </div>
+                </td>
+            </table>
+        </section>
+        <section class="contactSection2">
+        <h1 class="contacth1">Frequently Asked Questions</h1>
+        
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+   
+        <div class="contactcontainer12">
+          <div class="contactaccordion-item">
+              <button>
+                  <span class="contacttitle">
+                      Why do people use STUDYBUDDY?
+                  </span>
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+              </button>
+              <p class="contactdescription">
+                The key purpose is for accountability while studying. We study better when there are others doing the same thing! A lot of our users also like the platform because they never have to feel alone while studying.
+              </p>
+          </div>
+  
+          <div class="contactaccordion-item">
+              <button>
+                  <span class="contacttitle">
+                    Why does Zoom ask for a passcode when I try to enter the Focus Rooms?
+                  </span>
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+              </button>
+              <p class="contactdescription">
+                You have to log in to Zoom before clicking the link to the Focus Room. If you are asked for a password simply exit, log into Zoom, and try again!
+              </p>
+          </div>
+  
+          <div class="contactaccordion-item">
+              <button>
+                  <span class="contacttitle">
+                    What are Mindfulness sessions?
+                  </span>
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+              </button>
+              <p class="contactdescription">
+                Our Mindfulness sessions are designed to give you the study break you need, while taking care of your mental wellbeing and productivity needs. They are hosted every Monday, Wednesday and Friday at 19:30BST.
+              </p>
+          </div>
+  
+          <div class="contactaccordion-item">
+              <button>
+                  <span class="contacttitle">
+                    Do I have to pay for the Focus Room?
+                  </span>
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+              </button>
+              <p class="contactdescription">
+                Our public focus rooms are completely free to use. We also offer Premium room access which gives you smaller rooms and all-inclusive access to all of our amazing events including dance parties, concerts, and more!
+              </p>
+          </div>
+      </div>
+      </div>
+  
+      <script>
+          var buttons = document.querySelectorAll('button');
+  
+          buttons.forEach(buttonEl => {
+              buttonEl.addEventListener('click', function () {
+                  var isCurrentClosed = !this.classList.contains('opened');
+  
+                  /* Close all accordions */
+                  buttons.forEach(el => el.classList.remove('opened'));
+  
+                  /* If current element is closed, then open it adding 'opened' class */
+                  if (isCurrentClosed) {
+                      this.classList.add('opened');
+                  }
+              })
+          });
+      </script>
+  
+
+        
+
+        </section>
+    
+    </div>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
